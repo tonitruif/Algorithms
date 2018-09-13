@@ -1,5 +1,3 @@
-
-
 def levenstein(str1, str2):
     l1, l2 = len(str1), len(str2)
 
@@ -18,7 +16,6 @@ def levenstein(str1, str2):
             mtr[0][j] = j
             mtr[i][0] = i
 
-
     for i in range(1,l1):
         for j in range(1,l2):
             if (str1[i] == str2[j]):
@@ -31,6 +28,6 @@ def levenstein(str1, str2):
         for j in range(l2):
             print(mtr[i][j], end = ' ')
         print()
-
+    return mtr[i][j]
 
 

@@ -1,4 +1,5 @@
-import functions as func
+from lab1 import functions as func
+import time
 
 if __name__ == "__main__":
     str1 = str(input("enter string1: "))
@@ -8,4 +9,9 @@ if __name__ == "__main__":
     if str1 > str2:
         str1, str2 = str2, str1
 
-    func.levenstein(str1, str2)
+    start = time.time()
+    basic_levenstein =  func.levenstein(str1, str2)
+    end = time.time() - start
+
+    print(end *1000)
+
