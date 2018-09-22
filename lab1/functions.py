@@ -11,10 +11,12 @@ def levenstein(str1, str2):
         return l1
 
     mtr = [[0 for x in range(l2)] for y in range(l1)]
+    print(mtr)
     for i in range(l1):
         for j in range(l2):
             mtr[0][j] = j
             mtr[i][0] = i
+    print(mtr)
 
     for i in range(1, l1):
         for j in range(1, l2):

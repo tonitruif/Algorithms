@@ -9,6 +9,7 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage{filecontents}
+\usepackage{graphicx}
 
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
@@ -70,11 +71,43 @@ d_{a,b}(i-1,j-1) + 1_{(a_i \neq b_j)}
 \end{cases}
 $$
 Операция обмена учитывает специфику применения - ошибка в неверном порядке двух букв встречается чаще всего.
+
 \section{Конструкторская часть}
+В данном разделе представлены схемы алгоритмов 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=110mm]{damerau.jpg}
+\caption{Схема алгоритма Дамерау-Левенштейна \label{overflow}}
+\end{figure}
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=120mm]{levenstein-2.jpg}
+\caption{Схема алгоритма Левенштейна  \label{overflow}}
+\end{figure}
+
+\newpage
+\newpage
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{list.jpg}
+	\caption{Вложенность рекурсии\label{overflow}}
+\end{figure}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{recursion.jpg}
+	\caption{Схема рекурсивного алгоритма Левенштейна \label{overflow}}
+\end{figure}
+
+\newpage
+\newpage
 \section{Технологическая часть}
+
 В этом разделе приведена реализация функций, указан язык программирования и необходимые модули. 
 \subsection{Требования к программному обеспечению}
-???
+
 \subsection{Средства реализации}
 В данной работе использовался язык Python 3.6, в среде Pycharm. Для измерения времени использовался модуль time.
 \subsection{Листинг кода}
@@ -106,7 +139,9 @@ $$
 	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 \lstinputlisting[language=Python]{functions.py}
+\newpage
 \section{Экспериментальная часть}
+В данном разделе будут приведены примеры работы программы для трех разных вариантов: стандартный алгоритм Левенштейна, алгоритм Дамерау-Левенштейна, и рекурсивный алгоритм Левенштейна. Приведет сравнительный анализ двух нерекурсивных алгоритмов при тестах от 100 до 1100 букв в слове. Тесты всех трех алгорит
 \subsection{Примеры работы}
 \begin{center}
 	\begin{tabular}{| l | l | l | l |}
@@ -134,7 +169,8 @@ $$\begin{vmatrix}
 \end{vmatrix}$$
 \end{center}
 \subsection{Сравнительный анализ}
-Сравнение алгоритма Левенштейна (красный) и Дамерау-Левенштейна(синий)
+Сравнение алгоритма Левенштейна  и Дамерау-Левенштейна
+\newline
 \begin{tikzpicture}
 \begin{axis}
 [
@@ -154,7 +190,7 @@ $$\begin{vmatrix}
 \addplot table [x=length, y=damerau, col sep=comma] {output.txt};
 \end{axis}
 \end{tikzpicture}
-\newline
+\newpage
 Сравнение с рекурсией\\
 \begin{tikzpicture}
 \begin{axis}
@@ -176,4 +212,6 @@ legend style={at={(0.1,-0.1)}, anchor=north}
 \addplot table [x=length, y=recursion, col sep=comma] {rec.txt};
 \end{axis}
 \end{tikzpicture}
+\section{Вывод}
+В ходе лабораторной работы были проанализированы алгоритмы поиска редакционного расстояния. Приведена практическая реализация алгоритмов. Для составления отчета был изучен язык разметки и математических фунцкий Latex.
 \end{document}

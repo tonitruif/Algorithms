@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.9.16)  22 SEP 2018 01:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.16)  22 SEP 2018 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,13 +164,10 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvips.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 147.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -205,7 +202,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
@@ -242,22 +239,21 @@ ode.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-dvips.def
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.de
-f
-File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
-ostscript.def
-File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
-\pgf@objectcount=\count115
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count116
-\pgfsyssoftpath@bigbuffer@items=\count117
+\pgfsyssoftpath@smallbuffer@items=\count115
+\pgfsyssoftpath@bigbuffer@items=\count116
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -268,9 +264,10 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 LaTeX Info: Redefining \color on input line 709.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -286,7 +283,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen129
-\pgfmath@count=\count118
+\pgfmath@count=\count117
 \pgfmath@box=\box31
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
@@ -311,7 +308,7 @@ code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count119
+\c@pgfmathroundto@lastzeros=\count118
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -349,7 +346,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
-\pgf@picture@serial@count=\count120
+\pgf@picture@serial@count=\count119
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -384,7 +381,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen153
-\pgf@sys@shading@range@num=\count121
+\pgf@sys@shading@range@num=\count120
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -447,7 +444,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count122
+\pgf@plot@mark@count=\count121
 \pgfplotmarksize=\dimen158
 )
 \tikz@lastx=\dimen159
@@ -460,19 +457,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box38
 \tikz@tempbox=\box39
 \tikz@tempbox@bg=\box40
-\tikztreelevel=\count123
-\tikznumberofchildren=\count124
-\tikznumberofcurrentchild=\count125
-\tikz@fig@count=\count126
+\tikztreelevel=\count122
+\tikznumberofchildren=\count123
+\tikznumberofcurrentchild=\count124
+\tikz@fig@count=\count125
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count127
-\pgfmatrixcurrentcolumn=\count128
-\pgf@matrix@numberofcolumns=\count129
+\pgfmatrixcurrentrow=\count126
+\pgfmatrixcurrentcolumn=\count127
+\pgf@matrix@numberofcolumns=\count128
 )
-\tikz@expandcount=\count130
+\tikz@expandcount=\count129
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -487,8 +484,8 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \t@pgfplots@tokb=\toks39
 \t@pgfplots@tokc=\toks40
 \pgfplots@tmpa=\dimen165
-\c@pgfplots@coordindex=\count131
-\c@pgfplots@scanlineindex=\count132
+\c@pgfplots@coordindex=\count130
+\c@pgfplots@scanlineindex=\count131
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -504,7 +501,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count133
+\c@pgfmathroundto@lastzeros=\count132
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_leq.code.tex))
@@ -516,13 +513,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count134
+\c@pgfplotsarray@tmp=\count133
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count135
+\c@pgfplotstable@counta=\count134
 \t@pgfplotstable@a=\toks41
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -535,10 +532,10 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count136
+\c@pgfplotslibrarysurf@no=\count135
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
-.surfshading.pgfsys-dvips.def)))
+.surfshading.pgfsys-pdftex.def)))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
 code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
@@ -572,7 +569,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen168
 \pgfdecoratedinputsegmentremainingdistance=\dimen169
 \pgf@decorate@distancetomove=\dimen170
-\pgf@decorate@repeatstate=\count137
+\pgf@decorate@repeatstate=\count136
 \pgfdecorationsegmentamplitude=\dimen171
 \pgfdecorationsegmentlength=\dimen172
 )
@@ -586,7 +583,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count138
+\pgfplots@numplots=\count137
 \pgfplots@xmin@reg=\dimen173
 \pgfplots@xmax@reg=\dimen174
 \pgfplots@ymin@reg=\dimen175
@@ -610,34 +607,113 @@ eX document
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+)
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-\c@lstlisting=\count139
+\c@lstlisting=\count138
 
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count139
+\scratchdimen=\dimen179
+\scratchbox=\box42
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen180
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks43
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 24.
+ on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
@@ -646,7 +722,7 @@ File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [1
 
-]
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-3.def
 File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
 )
@@ -657,7 +733,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 ... алгоритмов Левенштей
+l.31 ... алгоритмов Левенштей
                                                   на и Дамерау-Л�...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -670,7 +746,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 ...�а и Дамерау-Левенштей
+l.31 ...�а и Дамерау-Левенштей
                                                   на нахождения ...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -683,7 +759,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 ...рования для матричной
+l.32 ...рования для матричной
                                                    реализации ук...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -696,7 +772,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 ...лгоритмов в матричной
+l.33 ...лгоритмов в матричной
                                                    версии и одно�...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -709,7 +785,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 ...оритмов в рекурсивной
+l.33 ...оритмов в рекурсивной
                                                    версии;
 Composed characters can only be rendered correctly, when the option 'combine' i
 s activated
@@ -721,7 +797,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \item Сравнительный
+l.34 \item Сравнительный
                                         анализ линейной и...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -734,7 +810,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...тельный анализ линей
+l.34 ...тельный анализ линей
                                                   ной и рекурси...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -747,7 +823,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...ный анализ линейной
+l.34 ...ный анализ линейной
                                                    и рекурсивнои...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -760,85 +836,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...ейной и рекурсивной
-                                                   реализаций в...
-
-Composed characters can only be rendered correctly, when the option 'combine' i
-s activated
-
-
-! Package ucs Error: Please activate option 'combine'.
-
-See the ucs package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...�урсивной реализаций
-                                                   выбранного ал...
-
-Composed characters can only be rendered correctly, when the option 'combine' i
-s activated
-
-
-! Package ucs Error: Please activate option 'combine'.
-
-See the ucs package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ...�дтверждение различий
-                                                   во временнóи�...
-
-Composed characters can only be rendered correctly, when the option 'combine' i
-s activated
-
-
-! Package ucs Error: Please activate option 'combine'.
-
-See the ucs package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ... различий во временнó
-                                                  й эффективно�...
-
-Composed characters can only be rendered correctly, when the option 'combine' i
-s activated
-
-
-! Package ucs Error: Please activate option 'combine'.
-
-See the ucs package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ...�зличий во временнóй
-                                                   эффективност�...
-
-Composed characters can only be rendered correctly, when the option 'combine' i
-s activated
-
-
-! Package ucs Error: Please activate option 'combine'.
-
-See the ucs package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ...�тивности рекурсивной
-                                                   и нерекурсивн...
-
-Composed characters can only be rendered correctly, when the option 'combine' i
-s activated
-
-
-! Package ucs Error: Please activate option 'combine'.
-
-See the ucs package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ...вной и нерекурсивной
+l.34 ...ейной и рекурсивной
                                                    реализаций в...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -864,7 +862,85 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 ...� отчете о выполненной
+l.35 ...�дтверждение различий
+                                                   во временнóи�...
+
+Composed characters can only be rendered correctly, when the option 'combine' i
+s activated
+
+
+! Package ucs Error: Please activate option 'combine'.
+
+See the ucs package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ... различий во временнó
+                                                  й эффективно�...
+
+Composed characters can only be rendered correctly, when the option 'combine' i
+s activated
+
+
+! Package ucs Error: Please activate option 'combine'.
+
+See the ucs package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...�зличий во временнóй
+                                                   эффективност�...
+
+Composed characters can only be rendered correctly, when the option 'combine' i
+s activated
+
+
+! Package ucs Error: Please activate option 'combine'.
+
+See the ucs package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...�тивности рекурсивной
+                                                   и нерекурсивн...
+
+Composed characters can only be rendered correctly, when the option 'combine' i
+s activated
+
+
+! Package ucs Error: Please activate option 'combine'.
+
+See the ucs package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...вной и нерекурсивной
+                                                   реализаций в...
+
+Composed characters can only be rendered correctly, when the option 'combine' i
+s activated
+
+
+! Package ucs Error: Please activate option 'combine'.
+
+See the ucs package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...�урсивной реализаций
+                                                   выбранного ал...
+
+Composed characters can only be rendered correctly, when the option 'combine' i
+s activated
+
+
+! Package ucs Error: Please activate option 'combine'.
+
+See the ucs package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...� отчете о выполненной
                                                    лабораторнои�...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -877,7 +953,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 ...�ненной лабораторной
+l.36 ...�ненной лабораторной
                                                    работе, выпол�...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -890,7 +966,7 @@ See the ucs package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 ...ыполненного как расчё
+l.36 ...ыполненного как расчё
                                                   тно-пояснител�...
 
 Composed characters can only be rendered correctly, when the option 'combine' i
@@ -900,7 +976,7 @@ s activated
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.54 $
+l.55 $
       $
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -909,54 +985,105 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (46.91585pt too wide) detected at line 54
+Overfull \hbox (46.91585pt too wide) detected at line 55
 \OML/cmm/m/it/12 D\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i; j\OT1/cmr/m/n/12 ) = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 
-Overfull \hbox (63.07358pt too wide) detected at line 71
+Overfull \hbox (63.07358pt too wide) detected at line 72
 \OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i; j\OT1/cmr/m/n/12 ) = [
 ]
  []
 
-[3] (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+<damerau.jpg, id=16, 786.94pt x 1145.27875pt>
+File: damerau.jpg Graphic file (type jpg)
+<use damerau.jpg>
+Package pdftex.def Info: damerau.jpg  used on input line 79.
+(pdftex.def)             Requested size: 312.9803pt x 455.48206pt.
+[3]
+<levenstein-2.jpg, id=29, 786.94pt x 1085.05376pt>
+File: levenstein-2.jpg Graphic file (type jpg)
+<use levenstein-2.jpg>
+Package pdftex.def Info: levenstein-2.jpg  used on input line 86.
+(pdftex.def)             Requested size: 341.43306pt x 470.7694pt.
+ [4 <./damerau.jpg>]
+<list.jpg, id=33, 703.62875pt x 570.13pt>
+File: list.jpg Graphic file (type jpg)
+<use list.jpg>
+Package pdftex.def Info: list.jpg  used on input line 95.
+(pdftex.def)             Requested size: 341.43306pt x 276.65192pt.
+<recursion.jpg, id=34, 467.7475pt x 824.07875pt>
+File: recursion.jpg Graphic file (type jpg)
+<use recursion.jpg>
+Package pdftex.def Info: recursion.jpg  used on input line 100.
+(pdftex.def)             Requested size: 341.43306pt x 601.5725pt.
+
+
+LaTeX Warning: Float too large for page by 79.90526pt on input line 102.
+
+
+Overfull \vbox (17.9826pt too high) has occurred while \output is active []
+
+
+[5 <./levenstein-2.jpg>]
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(./functions.py [4] [5]) [6]
+(./functions.py [6 <./list.jpg>] [7] [8]) [9]
 PGFPlots: reading {output.txt}
 PGFPlots: reading {output.txt}
-PGFPlots: reading {rec.txt}
-PGFPlots: reading {rec.txt}
-PGFPlots: reading {rec.txt}
 
-Overfull \hbox (30.92648pt too wide) in paragraph at lines 137--179
-\T2A/cmr/m/n/12 ��������� ��-��-���-�� ��-���-����-�� (����-���) � �������-����
-�������(�����)
- []
-
-
-Overfull \hbox (46.01624pt too wide) in paragraph at lines 137--179
+Overfull \hbox (46.01624pt too wide) in paragraph at lines 172--193
 [] 
  []
 
+[10] [11]
+PGFPlots: reading {rec.txt}
+PGFPlots: reading {rec.txt}
+PGFPlots: reading {rec.txt}
 
-Overfull \hbox (38.50537pt too wide) in paragraph at lines 137--179
+Overfull \hbox (38.50537pt too wide) in paragraph at lines 194--215
 [] 
  []
 
-[7] [8] [9] (./report.aux) ) 
+[12] [13 <./recursion.jpg>] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 25846 strings out of 492650
- 628050 string characters out of 6129648
- 1056738 words of memory out of 5000000
- 29327 multiletter control sequences out of 15000+600000
+ 26663 strings out of 492649
+ 641598 string characters out of 6129622
+ 1062558 words of memory out of 5000000
+ 30098 multiletter control sequences out of 15000+600000
  15903 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,103p,727b,1817s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,103p,727b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
+}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on report.pdf (13 pages, 500389 bytes).
+PDF statistics:
+ 115 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on report.dvi (9 pages, 110184 bytes).

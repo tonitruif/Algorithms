@@ -14,8 +14,7 @@ if __name__ == "__main__":
     f.write("column1, column2\n")
     for i in range(1,5):
         str1 += 'a'
-        str2 += 'v' \
-                ''
+        str2 += 'v' 
         str2 = 'l' + str2
         str1 = 'l' + str1
         if str1 > str2:
