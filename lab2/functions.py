@@ -12,7 +12,6 @@ def winograd(G, H):
     b = len(H)
     c = len(H[0])
 
-    d = b // 2
     mulU = [0 for i in range(a)]
     mulV = [0 for i in range(c)]
     R = [[0 for i in range(c)] for j in range(a)]
