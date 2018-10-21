@@ -4,13 +4,14 @@ import numpy as np
 import time
 
 if __name__ == '__main__':
-    f = open('out.txt', 'a')
-    for i in range(2, 300, 25):
+    f = open('uneven.txt', 'a')
+    for i in range(101,1005, 100):
         M, N, Q = i, i + 1, i
 
         a = [[randint(0, 25) for i in range(N)] for j in range(M)]
         b = [[randint(0, 25) for i in range(Q)] for j in range(N)]
-
+        #print(a)
+        #print(b)
         start = time.time()
         res = func.multiply(a, b, M, N, Q)
         end1 = time.time() - start
@@ -30,4 +31,4 @@ if __name__ == '__main__':
         #print(result_opt)
         #num = np.matmul(a, b)
         #print(num)
-        f.write("{:<6d},{:<10f},{:<10f},{:<10f}\n".format(i, end1 * 1000, end2 * 1000, end3 * 1000))
+        f.write("{:<6d},{:<10f},{:<10f},{:<10f}\n".format(i, end1, end2, end3))
