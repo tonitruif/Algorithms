@@ -55,7 +55,7 @@ def opt_winograd(G, H):
         for j in range(c):
             R[i][j] = - mulU[i] - mulV[j]
             for k in range(d):
-                index = 2 * k
+                index = k + k
                 R[i][j] += ((G[i][index] + H[index + 1][j]) * (G[i][index + 1] + H[index][j]))
     if b % 2:
         for i in range(a):

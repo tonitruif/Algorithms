@@ -15,7 +15,7 @@
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
-\title{Отчет по лабораторной работе 1 \\ 
+\title{Отчет по лабораторной работе 2 \\ 
 	По предмету “Анализ алгоритмов” \\
 	По теме “Умножение матриц”
 }  
@@ -79,9 +79,9 @@ $C_{ij}$ += $U_{N-1}\cdot V_{N-1}, \forall i,j$
 \\
 \\
 \subsubsection{Оценка трудоемкости цикла for}
-Инициализация до цикла стоит 2, после выполнения тела цикла, инкрементируется итератор цикла, проверяется условие.
+Инициализация до цикла стоит 2, после выполнения тела цикла, инкрементируется итератор цикла, проверяется условие.Если в условии содержится выражение, то оно считается как сумма стоимости простых операций выше.
 \\
-$F = 2 + N*(F_{body} + 2)$
+$F = 2 + N*(F_{body} + Check_{body})$
 
 \subsubsection{Оценка трудоемкости оператора if}
 Переход по условию имеет стоимость 0, проверка условия зависит от выражения самой провеки согласно модели выше.
@@ -98,13 +98,13 @@ $F = 2 + N*(F_{body} + 2)$
 \end{figure}
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=150mm, height=170mm]{wino.png}
+	\includegraphics[width=150mm, height=170mm]{wino-3.png}
 	\caption{Схема алгоритма Винограда \label{overflow}}
 \end{figure}
 \newpage
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=150mm, height=150mm]{opt.png}
+	\includegraphics[width=150mm, height=150mm]{opt-2.png}
 	\caption{Схема алгоритма улучшенного Винограда \label{overflow}}
 \end{figure}
 \newpage
