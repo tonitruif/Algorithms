@@ -1,10 +1,13 @@
 def bubble_sort(a):
-    for i in range(len(a)):
-        for j in range(len(a) - 1, i, -1):
-            if a[j] < a[j-1]:
-                a[j], a[j-1] = a[j-1], a[j]
-    return a
+    n = len(a)
+    for i in range(n): # 2+N(2 +n-1(13 + 3))
+        for j in range(n - 1, i, -1):
+            if a[j] < a[j-1]:#4
+                swap = a[j] #2     body = 13
+                a[j] = a[j-1] #4
+                a[j-1] = swap #3
 
+    return #worse 18N^2 - 12, best: 2+N(2 + (N-1)(4+3) = 7N^2-3
 def insertion_sort(a):
     for n in range(1,len(a)):
         i = n - 1
@@ -12,7 +15,6 @@ def insertion_sort(a):
             a[i+1], a[i] = a[i], a[i+1]
             i -= 1
     return(a)
-
 def shaker(a):
     left = 0
     right = len(a) - 1

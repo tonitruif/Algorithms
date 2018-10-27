@@ -5,8 +5,8 @@ import time
 a = []
 b = []
 c = []
-f = open('shakersort.txt', 'w')
-for i in range(100,1000,100):
+f = open('qsort.txt', 'w')
+for i in range(100,5000,500):
     for i in range(i):
         a.append(i)
         b.append(1000 - i)
@@ -15,18 +15,19 @@ for i in range(100,1000,100):
     #print(b)
     #print(c)
     start = time.time()
-    func.shaker(a)
+    func.insertion_sort(a)
     end1 = time.time() - start
-    print(end1)
+    print(i,end1)
     start = time.time()
-    func.shaker(b)
+    func.insertion_sort(b)
     end2 = time.time() - start
-    print(end2)
+    print(i,end2)
     start = time.time()
-    func.shaker(a)
+    func.insertion_sort(c)
     end3 = time.time() - start
-    print(end3)
-    f.write("{:<6d},{:<10f},{:<10f},{:<10f}\n".format(i, end1 * 1000, end2 * 1000, end3 * 1000))
+    print(i,end3)
+    print(c)
+    f.write("{:<6d},{:<10f},{:<10f},{:<10f}\n".format(i, end1, end2, end3))
 
 
 

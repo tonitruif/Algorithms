@@ -1,0 +1,240 @@
+\documentclass[12pt]{article}  
+% Эта строка — комментарий, она не будет показана в выходном файле  
+\usepackage{ucs} 
+\usepackage[utf8x]{inputenc} % Включаем поддержку UTF8  
+\usepackage[russian]{babel}  % Включаем пакет для поддержки русского языка  
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\usepackage{graphicx}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\title{Отчет по лабораторной работе 3 \\ 
+	По предмету “Анализ алгоритмов” \\
+	По теме “Сортировка массивов”
+}  
+\date{2018}  
+\author{Фирсова Дарья ИУ7-56}
+
+\begin{document}  
+	\maketitle  
+	\newpage
+	\section*{Введение}
+	В лабораторной работе изучаются алгоритмы сортировки массивов. Для каждого алгоритма необходимо рассчитать сложность в зависимости от количества элементов.\\
+	\textbf{Цель лабораторной работы:} анализ, реализация и сравнительный анализ времени работы алгоритмов сортировки массивов. \\
+	\textbf{Задачи для лабораторной работы:}
+	\begin{enumerate}
+	\item Ввести модель оценки трудоемкости
+	\item Реализовать выбранные алгоритмы
+	\item Провести временные замеры
+	\item Произвести расчет трудоемкости для реализованных алгоритмов.
+	\item Сравнительный анализ времени работы алгоритма для массивов размером от 100 элементов до 10000.
+	\end{enumerate}
+
+\section{Аналитеская часть}
+В данном разделе приведены алгоритмы и составлена модель для вычисления трудоемкости.
+\subsection{Описание алгоритмов}
+\textbf{Алгоритм сортировки пузырьком}
+\\Алгоритм состоит из повторяющихся проходов по сортируемому массиву. За каждый проход элементы последовательно сравниваются попарно и, если порядок в паре неверный, выполняется обмен элементов. Проходы по массиву повторяются $N-1$ раз. При каждом проходе алгоритма по внутреннему циклу, очередной наибольший элемент массива ставится на своё место в конце массива рядом с предыдущим «наибольшим элементом», а наименьший элемент перемещается на одну позицию к началу массива. Был выбран как наиболее медленный для сравнения времени работы. Из-за своей неэффективности не используется на практике. 
+\newline
+\textbf{Шейкер сортировка}
+\\Является улучшением алгоритма сортировки пузырьком. В сортировке пузырьком элементы быстро "всплывают", но медленно "тонут", поэтому можно менять сторону просмотра массива на каждой итерации, смотреть сначала с начала, потом с конца.\\
+\textbf{Сортировка вставками}
+\\ Элементы входной последовательности просматриваются по одному, сравниваются попарно и каждый новый поступивший элемент размещается в подходящее место среди ранее упорядоченных элементов. 
+\subsection{Модель вычислений}
+Введем следующую модель вычислений:
+операции $+$  $-$  $*$  $/$  $<$  $>$  $==$  $!=$  $+=$  $=$  $[]$  имеют стоимость 1.
+\\
+\\
+\subsubsection{Оценка трудоемкости цикла for}
+Инициализация до цикла стоит 2, после выполнения тела цикла, инкрементируется итератор цикла, проверяется условие.
+\\
+$F = 2 + N*(F_{body} + 2)$
+
+\subsubsection{Оценка трудоемкости оператора if}
+Переход по условию имеет стоимость 0, проверка условия зависит от выражения самой провеки согласно модели выше.
+\\Для оператора без проверки условия: $F =0$
+\\Для оператора с проверкой условия: $F = 0 + body$
+\newpage
+\section{Конструкторская часть}
+В данном разделе представлены псевдокоды алгоритмов 
+\\\textbf{Сортировка пузырьком:}
+\\for i = 0, i< len(a) :\\
+for j = len(a)-1, j< i:\\
+	если a[j] < a[j-1]:\\
+		то a[j], a[j-1] = a[j-1], a[j];\\
+	конец если\\
+	j--;\\
+	конец for j;\\
+конец for i;\\
+\\\textbf{Сортировка вставками:}
+\\for  n = 1, n <len(a):\\
+i = n - 1\\
+пока (i > -1) и a[i+1] < a[i]:\\
+	a[i+1], a[i] = a[i], a[i+1]\\
+	i -= 1\\
+конец пока\\
+конец for\\
+\newpage
+\\\textbf{Шейкер сортировка:}\\
+left = 0\\
+right = len(a) - 1\\
+пока left <= right:\\
+for i = left, i<right:\\
+если a[i] > a[i + 1]:\\
+то a[i], a[i + 1] = a[i + 1], a[i]\\
+конец если\\
+right -= 1\\
+i = i + 1\\
+конец for\\
+\\for i= right, i<left:\\
+если a[i - 1] > a[i]:\\
+то a[i], a[i - 1] = a[i - 1], a[i]\\
+конец если\\
+left += 1\\
+i = i - 1\\
+конец for\\
+\newpage
+\section{Технологическая часть}
+В этом разделе приведена реализация функций, указан язык программирования и необходимые модули. 
+\subsection{Средства реализации}
+В данной работе использовался язык Python 3.6, в среде Pycharm. Для измерения времени использовался модуль time, измерения проищводились в секундах.
+\subsection{Листинг кода}
+\lstset{ 
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Python,                 % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=2,	                   % sets default tabsize to 2 spaces
+	title=Листинг 1. Реализация алгоритмов.                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+\lstinputlisting[language=Python]{functions.py}
+\subsection{Оценка трудоемкости алгоритмов}
+\textbf{Сортировка пузырьком}\\
+Самая неэффективная сортировка. Оценка трудоемкости приведена в листинке для лучшего и худшего случая. Лучший - весь массив уже отсортирован, $18N^{2}-12$, худший случай - весь массив отсортирован в обратном порядке, $7N^{2} - 3$. 
+\\
+\textbf{Сортировка вставками}\\
+Сложность в худшем случае: $W = \frac{N^{2}-N}{2}$ или $O(N^{2})$.\\
+Сложность в cреднем случае:  $O(N^{2})$.\\
+Сложность в лучшем случае:  $O(N)$.[1]\\
+\textbf{Сортировка Шейкер}\\
+Сложность в худшем случае:  $O(N^{2})$.\\
+Сложность в cреднем случае:  $O(N^{2})$.\\
+Сложность в лучшем случае:  $O(N)$.[2]\\
+
+\newpage
+\section{Экспериментальная часть}
+В данном разделе будут приведены примеры работы алгоритмов и произведены замеры времени. Тестирование производилось на компьютере с процессором Intel Core i5 (I5-6267U) и оперативной памятью 8 Гб. 
+\subsection{Примеры работы}
+Пример результата работы сортировки алгоритма не будет приведен. Для каждого алгоритма производились замеры времени для размерности от 100 до 5000 с шагом 500. Измерения производились для массивов трех типов: уже отсортированный (от меньшего к большему), отсортированный обратно (от большего к меньшему), составленный из случайных чисел. 
+\newline
+\subsection{Сравнительный анализ}
+Эксперимент с отсортированным и обратно отсортированным массивом проводился два раза, результат - среднее арифметическое двух замеров времени. Проводить повторные эксперименты для случайных значений не имеет слысла.
+\newpage
+График времени работы алгоритма сортировки пузырьком. \\
+\begin{tikzpicture}
+\begin{axis}
+[
+axis x line=middle,
+axis y line=middle,
+enlarge y limits=true,
+xmin=90, xmax=5000,
+ymin=0, ymax=60,
+width=15cm, height=15cm,     % size of the image
+grid = major,
+grid style={dashed, gray!30},
+ylabel=Время в сек,
+xlabel=Размерность массива,
+legend style={at={(0.1,-0.1)}, anchor=north}
+]
+\addplot table [x=length, y=normal, col sep=comma] {bubblesort.txt};
+\addplot table [x=length, y=reversed, col sep=comma] {bubblesort.txt};
+\addplot table [x=length, y=random, col sep=comma] {bubblesort.txt};
+\legend {Отсортирован, Обратно, Рандом}
+\end{axis}
+\end{tikzpicture}
+\newpage
+График времени работы сортировки вставками.\\
+\begin{tikzpicture}
+\begin{axis}
+[
+axis x line=middle,
+axis y line=middle,
+enlarge y limits=true,
+xmin=90, xmax=5000,
+ymin=0, ymax=60,
+width=15cm, height=15cm,     % size of the image
+grid = major,
+grid style={dashed, gray!30},
+ylabel=Время в сек,
+xlabel=Размерность массива,
+legend style={at={(0.1,-0.1)}, anchor=north}
+]
+\addplot table [x=length, y=normal, col sep=comma] {insertion.txt};
+\addplot table [x=length, y=reversed, col sep=comma] {insertion.txt};
+\addplot table [x=length, y=random, col sep=comma] {insertion.txt};
+\legend {Отсортирован, Обратно, Рандом}
+\end{axis}
+\end{tikzpicture}
+\newpage
+График времени работы сортировки Шейкера.\\
+\begin{tikzpicture}
+\begin{axis}
+[
+axis x line=middle,
+axis y line=middle,
+enlarge y limits=true,
+xmin=90, xmax=5000,
+ymin=0, ymax=60,
+width=15cm, height=15cm,     % size of the image
+grid = major,
+grid style={dashed, gray!30},
+ylabel=Время в сек,
+xlabel=Размерность массива,
+legend style={at={(0.1,-0.1)}, anchor=north}
+]
+\addplot table [x=length, y=normal, col sep=comma] {shakersort.txt};
+\addplot table [x=length, y=reversed, col sep=comma] {shakersort.txt};
+\addplot table [x=length, y=random, col sep=comma] {shakersort.txt};
+\legend {Отсортирован, Обратно, Рандом}
+\end{axis}
+\end{tikzpicture}
+\newpage
+\subsection{Вывод}
+Для каждого алгоритма уже отсортированный массив является лучшим случаем, что соответствует теории, потому что в этом случае не требуется совершать перестановки. 
+Для сортировки пузырьком худший случай ожидаемо стал обратно отсортированный массив, потому что в этом варианте требуется наибольшее количество перестановок. 
+Для Шейкер сортировки худший случай - случайный массив. Потому что случайный массив может сложиться таким образом, что требуется наибольшее число перестановок. Из графика видно, что быстрота времени работы обратно отсортированного и рандомного массива постоянно меняется, это связано с распределением случайных чисел. 
+Из графиков видно, что сортировка вставками работает быстрее в любом случае.
+\newpage
+\section{Заключение}
+В данной лабораторной работе вычислены сложности алгоритмов для сортировки массивов. Разработаны программы по этим алгоритмам, проведены тесты по времени, произведен сравнительный анализ алгоритмов. Для составления отчета использован Latex.
+\newpage
+\section{Список литературы}
+1.Анализ алгоритмов. Дж. Макконнелл, 2004\\
+2 http://algolab.valemak.com/cocktail
+\end{document}
