@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e1713c-b0a7-4715-af7f-751f2b8aec4d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab5/lab5/func.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/lab5/func.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.xcworkspace/xcuserdata/daria.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.xcworkspace/xcuserdata/daria.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/xcuserdata/daria.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/xcuserdata/daria.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/lab5/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/lab5/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/try(test).aux" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/try(test).aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/try(test).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/try(test).pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/try(test).synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/try(test).synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/try(test).tex" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/try(test).tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/project.xcworkspace/xcuserdata/daria.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/lab5.xcodeproj/xcuserdata/daria.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/lab5/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/mail.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="242">
+              <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -158,12 +163,12 @@
     <frame x="154" y="23" width="1286" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19367589" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19367589" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992224" visible="true" weight="0.26751593" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992224" weight="0.1656051" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -183,8 +188,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="242">
+          <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

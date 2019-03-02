@@ -9,13 +9,16 @@ def level1():
     time_end = time.time() - timeBegin
     while time_end < 3:
         if not queue1.empty():
-            mutex1.acquire()
+            f.write('взят на обработку в 1 очередь {}\n'.format(i))
             deleted = queue1.get()
-            mutex1.release()
             tmp1 = pow(deleted, 2)
-            print('поступил в 1 очередь {} {}'.format(tmp1, i))
+            tmp2 = pow(deleted, 4)
+            time.sleep(0.00001)
+            f.write('поступил 2 в очередь {} {}\n'.format(tmp1,i))
+            f.write('поступил 2 в очередь {} {}\n'.format(tmp2, i))
             mutex2.acquire()
             queue2.put(tmp1)
+            queue2.put(tmp2)
             mutex2.release()
             i = i+1
         time_end = time.time() - timeBegin
@@ -24,20 +27,24 @@ def level1():
 
 def level2():
     global timeBegin
-    time.sleep(0.001)
+    #time.sleep(0.001)
     time_end = time.time() - timeBegin
     print(time_end)
     i = 1
     while time_end < 3:
         if not queue2.empty():
+            f.write('взят на обработку в 2 очередь {}\n'.format(i))
             mutex2.acquire()
             deleted = queue2.get()
             mutex2.release()
-            tmp1 = deleted + 1
+            tmp1 = pow(deleted, 6)
+            tmp2 = pow(deleted, 8)
             mutex3.acquire()
             queue3.put(tmp1)
+            queue3.put(tmp2)
             mutex3.release()
-            print('закончил с 2 очередь {} {}'.format(tmp1, i ))
+            f.write('поступил 3 в очередь {} {}\n'.format(tmp1, i))
+            f.write('поступил 3 в очередь {} {}\n'.format(tmp2, i))
             i = i + 1
         time_end = time.time() - timeBegin
     print('LEVEL2 STOP')
@@ -45,7 +52,7 @@ def level2():
 
 def level3():
     global timeBegin
-    time.sleep(0.005)
+    #time.sleep(0.005)
     time_end = time.time() - timeBegin
     i = 1
     while time_end < 3:
@@ -55,22 +62,20 @@ def level3():
             mutex3.release()
 
             result = deleted + 4
-            print('закончил работу {} {}'.format(result, i))
+            f.write('закончил работу {} {}\n'.format(result, i))
             i = i + 1
         time_end = time.time() - timeBegin
     print('LEVEL 3 STOP')
 
 
 if __name__ == '__main__':
+    f = open('log.txt', 'w')
     threads = []
     queue1 = queue.Queue()
-    logger1 = []
     for i in range(1,50):
         queue1.put(random.randint(1, 100))
     queue2 = queue.Queue()
-    logger2 = []
     queue3 = queue.Queue()
-    logger3 = []
     timeBegin = time.time()
     mutex1 = threading.Lock()
     mutex2 = threading.Lock()
